@@ -35,7 +35,7 @@ export default function HomePage() {
             )}
           </header>
           <Link
-            to="/landing"
+            to="/build"
             className="group mb-8 flex items-center justify-between gap-3 px-4 py-3 rounded-lg border border-border bg-card hover:border-foreground/30 transition-colors"
           >
             <div className="flex items-center gap-3">

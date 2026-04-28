@@ -8,6 +8,7 @@ import HomePage from "@/pages/HomePage";
 import NotePage from "@/pages/NotePage";
 import TagPage from "@/pages/TagPage";
 import LandingPage from "@/pages/LandingPage";
+import BuilderPage from "@/pages/BuilderPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/landing" element={<LandingPage />} />
+            <Route path="/build" element={<BuilderPage />} />
             <Route path="/note/*" element={<NotePage />} />
             <Route path="/tag/:tag" element={<TagPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
