@@ -67,7 +67,7 @@ function tagColor(tag: string) {
   return TAG_COLORS[h]
 }
 
-export default function LandingPage() {
+export default function BuilderPage() {
   const [garden, setGarden] = useState<Garden>(() => loadGarden())
   const [activeNoteId, setActiveNoteId] = useState<string | null>(null)
   const [publishOpen, setPublishOpen] = useState(false)
