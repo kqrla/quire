@@ -1,10 +1,10 @@
-// landing page = the garden builder.
+// builder page, mounted at /build.
 //
 // layout: editor on the left, live preview on the right. the preview is a
 // simulated quire frame (sidebar + content + tag chips) bound to the same
 // garden state the editor mutates. nothing here touches /content or the real
-// content.ts loader — this page is fully self-contained so the builder can
-// run before the user has a backend or any persisted gardens.
+// content.ts loader, so the builder runs before the user has a backend or
+// any persisted gardens.
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
