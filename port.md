@@ -126,3 +126,16 @@ none required for the default flat-file setup. if you migrate to a database back
 | `src/index.css` | yes | standard css |
 
 there is no platform lock-in. the entire project can be lifted out of lovable and run on any node host.
+
+## the in-browser builder
+
+quire ships a `/landing` route that lets a visitor compose a garden in the browser without writing files by hand. it edits a json model in localstorage and exports a zip containing markdown notes plus a generated `src/lib/profile.ts` and `src/theme.css`.
+
+to use the export:
+
+1. unzip
+2. drop `content/`, `src/lib/profile.ts`, and `src/theme.css` into a fresh checkout of this repo
+3. open `src/main.tsx` and add `import './theme.css'` after the existing `import './index.css'`
+4. run `npm install && npm run dev`
+
+a future release will ship the engine inside the zip itself so step 2 collapses to "unzip and run".

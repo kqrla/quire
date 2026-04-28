@@ -7,6 +7,7 @@ import { ModeProvider } from "@/lib/mode";
 import HomePage from "@/pages/HomePage";
 import NotePage from "@/pages/NotePage";
 import TagPage from "@/pages/TagPage";
+import LandingPage from "@/pages/LandingPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/landing" element={<LandingPage />} />
             <Route path="/note/*" element={<NotePage />} />
             <Route path="/tag/:tag" element={<TagPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
