@@ -1,4 +1,5 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { Sprout } from 'lucide-react'
 import { getPage, getPages, getAllTags } from '@/lib/content'
 import { MarkdownContent } from '@/lib/markdown'
 import Layout from '@/components/Layout'
@@ -33,6 +34,19 @@ export default function HomePage() {
               <p className="text-muted-foreground text-sm italic">{index.frontmatter.summary}</p>
             )}
           </header>
+          <Link
+            to="/landing"
+            className="group mb-8 flex items-center justify-between gap-3 px-4 py-3 rounded-lg border border-border bg-card hover:border-foreground/30 transition-colors"
+          >
+            <div className="flex items-center gap-3">
+              <Sprout size={16} className="text-muted-foreground group-hover:text-foreground transition-colors" />
+              <div>
+                <div className="text-sm font-medium">build your own garden</div>
+                <div className="text-xs text-muted-foreground">edit in the browser, export as a zip, host anywhere</div>
+              </div>
+            </div>
+            <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">open builder →</span>
+          </Link>
           <hr className="border-border mb-8" />
           <MarkdownContent content={index.content} pages={pages} />
         </article>
