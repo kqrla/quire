@@ -87,7 +87,7 @@ export default function BuilderPage() {
       <header className="sticky top-0 z-30 border-b border-border bg-background/95 backdrop-blur">
         <div className="flex items-center justify-between gap-4 px-5 py-3">
           <div className="flex items-center gap-3">
-            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 text-xs">
+            <Link to="/landing" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 text-xs">
               <ArrowLeft size={13} />
               back
             </Link>
