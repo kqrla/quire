@@ -36,3 +36,17 @@
 - profile sidebar block, edit `src/lib/profile.ts`
 - design system in `src/index.css` and `tailwind.config.ts`
 - all colors are hsl tokens, swap the palette in one place
+
+## builder (`/landing`)
+
+- gui flow for creating a garden in the browser
+- profile editor for the bottom-corner identity card (name, handle, avatar, bio, links)
+- notes list with frontmatter and markdown editing per note
+- home page editor for the root index
+- theme picker with 5 presets and an accent hue slider
+- live preview that mirrors the published quire layout
+- autosaves to localstorage
+- publish dialog with two paths
+  - hosted at quire.wiki/@handle, accounts arrive in phase 2
+  - download zip for self-hosting, fully working today
+
